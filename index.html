@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música-</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <h2>Reproductor de Música</h2>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="prev">⏮️</button>
+            <button id="play">▶️</button>
+            <button id="pause">⏸️</button>
+            <button id="next">⏭️</button>
+        </div>
+        <input type="range" id="progress" min="0" max="100" value="0">
+        <div class="volume-control">
+            <label for="volume">Volumen</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        </div>
+        <input type="file" id="fileInput" multiple accept="audio/*">
+        <ul id="playlist"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
